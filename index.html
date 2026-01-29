@@ -1,0 +1,2087 @@
+<!DOCTYPE html><html lang="uk"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0D0D0D">
+
+  <title>Перезавантаження — вебінар 5 лютого о 17:30 | Альона Онофрійчук</title>
+  <meta name="description" content="Безкоштовний вебінар для жінок, які втомилися обирати між успіхом і щастям. 5 лютого о 17:30. Онлайн. Без запису.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Перезавантаження: як заробляти більше, працюючи в легкості">
+  <meta property="og:description" content="Безкоштовний вебінар для жінок, які втомилися обирати між успіхом і щастям. 5 лютого о 17:30.">
+  <meta property="og:type" content="website">
+  <!-- Поставте вашу картинку прев'ю -->
+  <!-- <meta property="og:image" content="https://your-domain.com/og.jpg" /> -->
+
+  <!-- Fonts (можна замінити на локальні, якщо треба максимальна швидкість) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+
+  <!-- 
+    АНАЛІТИКА (плейсхолдери)
+    1) GA4: вставте ваш Measurement ID в місці G-XXXX
+    2) Meta Pixel: вставте Pixel ID
+  -->
+  <!-- Google tag (gtag.js) -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+  -->
+  <!-- Meta Pixel Code -->
+  <!--
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+  -->
+
+  <style>
+    :root{
+      --bg: #0D0D0D;
+      --bg2: #141414;
+      --panel: rgba(255,255,255,0.06);
+      --panel2: rgba(255,255,255,0.08);
+      --text: #FFFFFF;
+      --muted: rgba(255,255,255,0.68);
+      --muted2: rgba(255,255,255,0.52);
+      --gold: #D4AF37;
+      --gold2: #C9A962;
+      --ring: rgba(212,175,55,0.32);
+      --shadow: 0 18px 60px rgba(0,0,0,0.55);
+      --radius: 22px;
+      --radius2: 16px;
+      --max: 1160px;
+
+      --serif: "Playfair Display", serif;
+      --sans: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+      --sticky-h: 74px;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+      color: var(--text);
+      background:
+        radial-gradient(1200px 700px at 70% 10%, rgba(212,175,55,0.10), transparent 60%),
+        radial-gradient(900px 600px at 15% 30%, rgba(201,169,98,0.08), transparent 62%),
+        linear-gradient(180deg, #0B0B0B, #0D0D0D 30%, #0B0B0B 100%);
+      overflow-x: hidden;
+    }
+
+    a{ color: inherit; text-decoration: none; }
+    img{ max-width: 100%; display: block; }
+
+    .container{
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* Subtle "luxury dust" overlay */
+    .grain::before{
+      content:"";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.10;
+      mix-blend-mode: overlay;
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.05), transparent 35%),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.04), transparent 38%),
+        radial-gradient(circle at 50% 50%, rgba(212,175,55,0.05), transparent 42%);
+      filter: blur(0.2px);
+      z-index: 1;
+    }
+
+    /* Top floating bar */
+    .topbar{
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(13,13,13,0.62);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .topbar-inner{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 0;
+    }
+    .topbar-left{
+      display:flex;
+      align-items:center;
+      gap: 12px;
+      min-width: 0;
+    }
+    .brand{
+      font-family: var(--serif);
+      letter-spacing: 0.02em;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .topbar-meta{
+      font-size: 13px;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap: 10px;
+      border: 1px solid rgba(212,175,55,0.55);
+      background: linear-gradient(180deg, rgba(212,175,55,0.92), rgba(201,169,98,0.88));
+      color: #0B0B0B;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 14px 18px;
+      border-radius: 999px;
+      box-shadow: 0 18px 45px rgba(212,175,55,0.14);
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+      user-select:none;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      filter: saturate(1.04);
+      box-shadow: 0 22px 60px rgba(212,175,55,0.18);
+    }
+    .btn:active{ transform: translateY(0px) scale(0.99); }
+    .btn:focus-visible{
+      outline: 2px solid var(--ring);
+      outline-offset: 3px;
+    }
+    .btn-secondary{
+      background: rgba(255,255,255,0.06);
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,0.16);
+      box-shadow: none;
+      text-transform: none;
+      letter-spacing: 0.01em;
+      font-weight: 600;
+    }
+    .btn-secondary:hover{
+      box-shadow: 0 18px 60px rgba(0,0,0,0.45);
+    }
+
+    /* Hero */
+    header.hero{
+      position: relative;
+      z-index: 2;
+      padding: 34px 0 38px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: center;
+      padding: 26px 0 10px;
+    }
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+    .kicker .dot{
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 5px rgba(212,175,55,0.12);
+    }
+    h1{
+      font-family: var(--serif);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      line-height: 1.04;
+      font-size: clamp(34px, 4vw, 56px);
+      margin: 14px 0 12px;
+    }
+    .subhead{
+      font-size: clamp(15px, 1.3vw, 18px);
+      line-height: 1.55;
+      color: var(--muted);
+      max-width: 58ch;
+      margin: 0 0 18px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap: wrap;
+      align-items:center;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .micro{
+      font-size: 13px;
+      color: var(--muted2);
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    .timer{
+      margin-top: 18px;
+      padding: 14px 14px;
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.04));
+      box-shadow: var(--shadow);
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .timer-left{ min-width: 0; }
+    .timer-title{
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      display:flex;
+      align-items:center;
+      gap: 10px;
+    }
+    .timer-title .ring{
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(212,175,55,0.22);
+      border: 1px solid rgba(212,175,55,0.45);
+      box-shadow: 0 0 0 6px rgba(212,175,55,0.08);
+    }
+    .countdown{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .tbox{
+      min-width: 74px;
+      padding: 10px 10px;
+      border-radius: 14px;
+      background: rgba(0,0,0,0.35);
+      border: 1px solid rgba(255,255,255,0.10);
+      text-align:center;
+    }
+    .tval{
+      font-family: var(--serif);
+      font-size: 26px;
+      line-height: 1.0;
+      color: #fff;
+    }
+    .tlab{
+      margin-top: 4px;
+      font-size: 12px;
+      color: var(--muted2);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .timer-right{
+      display:flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-end;
+      text-align: right;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(212,175,55,0.35);
+      background: rgba(212,175,55,0.10);
+      font-size: 12px;
+      color: rgba(255,255,255,0.86);
+    }
+    .pill svg{ opacity: 0.9; }
+
+    /* Hero image block */
+    .hero-visual{
+      position: relative;
+      border-radius: clamp(18px, 2vw, 28px);
+      overflow: hidden;
+      min-height: 520px;
+      box-shadow: 0 32px 120px rgba(0,0,0,0.70);
+      border: 1px solid rgba(255,255,255,0.10);
+      background:
+        radial-gradient(1000px 600px at 30% 20%, rgba(212,175,55,0.16), transparent 55%),
+        linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      transform: translateZ(0);
+    }
+    .hero-visual::before{
+      content:"";
+      position:absolute;
+      inset: 0;
+      background:
+        radial-gradient(800px 480px at 60% 20%, rgba(212,175,55,0.14), transparent 55%),
+        radial-gradient(700px 540px at 20% 85%, rgba(201,169,98,0.10), transparent 58%),
+        linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.64));
+      z-index: 1;
+      pointer-events:none;
+    }
+    .hero-visual .photo{
+      position:absolute;
+      inset: 0;
+      z-index: 0;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.75);
+      font-size: 14px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align:center;
+      padding: 18px;
+    }
+    .hero-visual .caption{
+      position:absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      z-index: 2;
+      display:flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 12px;
+    }
+    .caption-left{ max-width: 70%; }
+    .name{
+      font-family: var(--serif);
+      font-size: 20px;
+      margin: 0 0 6px;
+    }
+    .bio{
+      margin:0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .badge-row{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .badge{
+      font-size: 12px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(0,0,0,0.35);
+      color: rgba(255,255,255,0.82);
+      white-space: nowrap;
+    }
+    .badge.gold{
+      border-color: rgba(212,175,55,0.45);
+      background: rgba(212,175,55,0.10);
+    }
+
+    /* Sections */
+    section{
+      position: relative;
+      z-index: 2;
+      padding: 64px 0;
+    }
+    .section-head{
+      display:flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .h2{
+      font-family: var(--serif);
+      font-size: clamp(26px, 2.4vw, 36px);
+      margin: 0;
+      line-height: 1.12;
+      letter-spacing: 0.01em;
+    }
+    .lead{
+      margin: 0;
+      color: var(--muted);
+      max-width: 60ch;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .grid-2{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .card{
+      border-radius: var(--radius);
+      padding: 18px 18px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      box-shadow: 0 18px 80px rgba(0,0,0,0.38);
+      transform: translateZ(0);
+    }
+    .card:hover{ border-color: rgba(212,175,55,0.22); }
+    .card-title{
+      margin: 0 0 8px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .card-text{
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+    .quote{
+      margin-top: 18px;
+      padding: 18px 18px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(212,175,55,0.22);
+      background: linear-gradient(180deg, rgba(212,175,55,0.10), rgba(255,255,255,0.03));
+      color: rgba(255,255,255,0.88);
+    }
+    .quote em{
+      font-family: var(--serif);
+      font-style: italic;
+      color: rgba(255,255,255,0.94);
+    }
+
+    /* About */
+    .about-wrap{
+      display:grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 18px;
+      align-items: stretch;
+      margin-top: 20px;
+    }
+    .mosaic{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .ph{
+      border-radius: 18px;
+      overflow:hidden;
+      min-height: 200px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background:
+        radial-gradient(700px 460px at 30% 25%, rgba(212,175,55,0.14), transparent 58%),
+        linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      position: relative;
+      box-shadow: 0 22px 90px rgba(0,0,0,0.42);
+    }
+    .ph::after{
+      content: "Фото (замінити на реальне)";
+      position:absolute;
+      inset: 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 16px;
+      text-align:center;
+      color: rgba(255,255,255,0.62);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 12px;
+      background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.58));
+    }
+    .ph.big{
+      grid-column: 1 / -1;
+      min-height: 260px;
+    }
+
+    .about-text{ padding: 22px 22px; }
+    .about-text p{
+      margin: 0 0 12px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    .about-text strong{
+      color: rgba(255,255,255,0.92);
+      font-weight: 600;
+    }
+    .proof{
+      margin-top: 14px;
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .proof .tag{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(0,0,0,0.30);
+      color: rgba(255,255,255,0.86);
+      font-size: 13px;
+    }
+    .proof .tag svg{ opacity: 0.85; }
+
+    /* Agenda */
+    .agenda{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .agenda-item{
+      display:grid;
+      grid-template-columns: 86px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 18px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+    }
+    .agenda-num{
+      width: 76px;
+      height: 76px;
+      border-radius: 18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family: var(--serif);
+      font-size: 24px;
+      background: rgba(212,175,55,0.10);
+      border: 1px solid rgba(212,175,55,0.28);
+      box-shadow: 0 18px 60px rgba(212,175,55,0.08);
+    }
+    .agenda-item h3{
+      margin: 0 0 6px;
+      font-size: 16px;
+      letter-spacing: 0.01em;
+    }
+    .agenda-item p{
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    /* Testimonials */
+    .testimonials{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .tcard{
+      padding: 16px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      min-height: 220px;
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .trow{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+    }
+    .avatar{
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.12);
+      position: relative;
+      overflow:hidden;
+    }
+    .avatar::after{
+      content:"Фото";
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size: 11px;
+      color: rgba(255,255,255,0.62);
+    }
+    .tname{
+      margin:0;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .tmeta{
+      margin:0;
+      font-size: 12px;
+      color: var(--muted2);
+    }
+    .tquote{
+      margin:0;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.6;
+      font-size: 13px;
+      flex: 1;
+    }
+    .note{
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px dashed rgba(255,255,255,0.18);
+      color: var(--muted2);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* FAQ */
+    .faq{
+      margin-top: 16px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    details.faq-item{
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      overflow: hidden;
+    }
+    details.faq-item summary{
+      cursor: pointer;
+      padding: 18px 18px;
+      list-style: none;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 10px;
+      font-weight: 600;
+    }
+    details.faq-item summary::-webkit-details-marker{ display:none; }
+    .chev{
+      width: 34px; height: 34px;
+      border-radius: 12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.12);
+      flex: 0 0 auto;
+      transition: transform .2s ease;
+    }
+    details[open] .chev{ transform: rotate(180deg); }
+    .faq-body{
+      padding: 0 18px 18px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    /* Form */
+    .form-wrap{
+      display:grid;
+      grid-template-columns: 1fr 0.95fr;
+      gap: 16px;
+      margin-top: 18px;
+      align-items: start;
+    }
+    .form{
+      padding: 18px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+      box-shadow: var(--shadow);
+    }
+    .field{
+      display:flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    label{
+      font-size: 13px;
+      color: rgba(255,255,255,0.84);
+      letter-spacing: 0.01em;
+    }
+    input{
+      width: 100%;
+      padding: 14px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.30);
+      color: var(--text);
+      outline: none;
+      font-family: var(--sans);
+      font-size: 14px;
+    }
+    input::placeholder{ color: rgba(255,255,255,0.36); }
+    input:focus{
+      border-color: rgba(212,175,55,0.45);
+      box-shadow: 0 0 0 4px rgba(212,175,55,0.10);
+    }
+    .form-actions{
+      display:flex;
+      flex-wrap: wrap;
+      align-items:center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .fineprint{
+      margin-top: 10px;
+      color: var(--muted2);
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+    .sidepanel{
+      padding: 18px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(212,175,55,0.18);
+      background:
+        radial-gradient(900px 600px at 30% 20%, rgba(212,175,55,0.12), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+    }
+    .sidepanel h3{
+      margin: 0 0 10px;
+      font-family: var(--serif);
+      font-size: 20px;
+      letter-spacing: 0.01em;
+    }
+    .sidepanel ul{
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+    .sidepanel li{ margin: 8px 0; }
+    .divider{
+      height: 1px;
+      background: rgba(255,255,255,0.10);
+      margin: 14px 0;
+    }
+
+    /* Final CTA */
+    .final{
+      border-radius: calc(var(--radius) + 6px);
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+      box-shadow: 0 32px 120px rgba(0,0,0,0.60);
+      display:grid;
+      grid-template-columns: 1fr 0.95fr;
+      gap: 0;
+      min-height: 420px;
+    }
+    .final .left{
+      padding: 26px;
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+    }
+    .final h2{
+      font-family: var(--serif);
+      font-size: clamp(26px, 2.8vw, 40px);
+      margin: 0 0 10px;
+      line-height: 1.12;
+    }
+    .final p{
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+      max-width: 60ch;
+    }
+    .final .meta{
+      margin-top: 10px;
+      color: rgba(255,255,255,0.82);
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .final .right{
+      position: relative;
+      background:
+        radial-gradient(900px 600px at 40% 20%, rgba(212,175,55,0.16), transparent 60%),
+        linear-gradient(180deg, rgba(0,0,0,0.10), rgba(0,0,0,0.60));
+    }
+    .final .right::after{
+      content:"Фото для фінального блоку (замінити на реальне)";
+      position:absolute;
+      inset: 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding: 18px;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    footer{
+      position: relative;
+      z-index: 2;
+      padding: 28px 0 110px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.20);
+    }
+    .footer-inner{
+      display:flex;
+      align-items:flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    .fcol{ min-width: 220px; }
+    .fbrand{
+      font-family: var(--serif);
+      font-weight: 700;
+      margin: 0 0 8px;
+      letter-spacing: 0.02em;
+    }
+    .flink{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,255,255,0.88);
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+    .flink:hover{ border-color: rgba(212,175,55,0.22); }
+    .small{
+      color: var(--muted2);
+      font-size: 12.5px;
+      line-height: 1.6;
+    }
+
+    /* Sticky bottom CTA for mobile */
+    .sticky-cta{
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      z-index: 60;
+      background: rgba(13,13,13,0.72);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255,255,255,0.10);
+      padding: 10px 0;
+      display:none;
+    }
+    .sticky-cta .inner{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .sticky-cta .txt{ min-width: 0; }
+    .sticky-cta .txt .t1{
+      font-family: var(--serif);
+      margin:0;
+      font-size: 14px;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+    }
+    .sticky-cta .txt .t2{
+      margin: 2px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+    }
+    .sticky-cta .btn{ padding: 12px 14px; font-size: 12px; }
+
+    /* Exit intent modal */
+    .modal-backdrop{
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.70);
+      display:none;
+      z-index: 90;
+      padding: 18px;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal{
+      width: min(720px, 100%);
+      border-radius: 26px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background:
+        radial-gradient(900px 600px at 30% 20%, rgba(212,175,55,0.14), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      box-shadow: 0 40px 160px rgba(0,0,0,0.72);
+      overflow: hidden;
+    }
+    .modal .mhead{
+      padding: 18px 18px 0;
+      display:flex;
+      align-items:flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .modal .mhead h3{
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 22px;
+      line-height: 1.15;
+    }
+    .modal .close{
+      appearance:none;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.28);
+      color: rgba(255,255,255,0.86);
+      width: 38px;
+      height: 38px;
+      border-radius: 14px;
+      cursor:pointer;
+    }
+    .modal .mbody{
+      padding: 10px 18px 18px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    /* Social proof toast */
+    .toast{
+      position: fixed;
+      right: 14px;
+      bottom: 96px;
+      z-index: 80;
+      width: min(320px, calc(100% - 28px));
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(13,13,13,0.74);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 26px 90px rgba(0,0,0,0.55);
+      padding: 12px;
+      display:none;
+    }
+    .toast .row{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+    }
+    .toast .dot{
+      width: 10px; height: 10px; border-radius: 50%;
+      background: rgba(212,175,55,0.85);
+      box-shadow: 0 0 0 6px rgba(212,175,55,0.12);
+    }
+    .toast .msg{
+      margin:0;
+      font-size: 13px;
+      line-height: 1.35;
+      color: rgba(255,255,255,0.86);
+    }
+    .toast .time{
+      margin: 4px 0 0;
+      font-size: 12px;
+      color: var(--muted2);
+    }
+
+    /* Scroll reveal */
+    .reveal{
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .7s ease, transform .7s ease;
+      will-change: opacity, transform;
+    }
+    .reveal.in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Thank you view */
+    .thankyou{
+      display:none;
+      padding: 80px 0 60px;
+    }
+    .thankyou .box{
+      border-radius: 26px;
+      border: 1px solid rgba(212,175,55,0.22);
+      background:
+        radial-gradient(900px 600px at 30% 20%, rgba(212,175,55,0.14), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+    .thankyou h2{
+      font-family: var(--serif);
+      margin: 0 0 10px;
+      font-size: clamp(26px, 3vw, 40px);
+    }
+    .thankyou p{
+      margin: 0 0 12px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .hero-visual{ min-height: 460px; }
+      .about-wrap{ grid-template-columns: 1fr; }
+      .form-wrap{ grid-template-columns: 1fr; }
+      .final{ grid-template-columns: 1fr; }
+      .final .right{ min-height: 260px; }
+      .testimonials{ grid-template-columns: repeat(2, 1fr); }
+      .grid-3{ grid-template-columns: 1fr; }
+      .grid-2{ grid-template-columns: 1fr; }
+      .timer{ flex-direction: column; align-items: flex-start; }
+      .timer-right{ align-items: flex-start; text-align: left; }
+    }
+    @media (max-width: 640px){
+      section{ padding: 52px 0; }
+      .topbar-meta{ display:none; }
+      .sticky-cta{ display:block; }
+      footer{ padding-bottom: 130px; }
+      .testimonials{ grid-template-columns: 1fr; }
+      .tbox{ min-width: 72px; }
+      .agenda-item{ grid-template-columns: 1fr; }
+      .agenda-num{ width: 70px; height: 70px; }
+    }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce){
+      .reveal{ transition: none; }
+      .btn{ transition: none; }
+      .chev{ transition: none; }
+    }
+  </style>
+</head>
+
+<body class="grain">
+  <!-- Top bar -->
+  <div class="topbar" aria-label="Навігаційна панель">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="topbar-left">
+          <div class="brand">Альона Онофрійчук</div>
+          <div class="topbar-meta" id="topbarMeta">
+            Безкоштовний вебінар • <span id="eventDateInline">5 лютого</span> о <span id="eventTimeInline">17:30</span> • Онлайн • Без запису
+          </div>
+        </div>
+        <a class="btn" href="#register" id="topCta">Забронювати місце</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thank You "page" (показується при #thank-you) -->
+  <div class="thankyou" id="thankyou">
+    <div class="container">
+      <div class="box reveal">
+        <h2>Готово. Твоє місце заброньовано.</h2>
+        <p>
+          Я надішлю підтвердження на email. Якщо ти залишила месенджер/телефон — нагадаю перед стартом.
+        </p>
+        <p class="small">
+          Важливо: запису не буде — це ефір, який варто прожити в моменті.
+        </p>
+        <div class="form-actions">
+          <a class="btn" href="#home" id="backToHome">Повернутися на сторінку</a>
+          <a class="btn btn-secondary" href="#faq">Переглянути FAQ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main landing -->
+  <main id="home">
+    <header class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="reveal">
+            <div class="kicker">
+              <span class="dot" aria-hidden="true"></span>
+              Безкоштовний онлайн-вебінар
+            </div>
+
+            <h1>Перезавантаження: як заробляти більше, працюючи в легкості</h1>
+
+            <p class="subhead">
+              Безкоштовний вебінар для жінок, які втомилися обирати між успіхом і щастям.
+              Це не чергова мотивація — це чесна розмова про гроші, сенс і внутрішню опору.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#register" id="heroCta">Забронювати місце</a>
+              <a class="btn btn-secondary" href="#program">Що буде на вебінарі</a>
+            </div>
+
+            <div class="timer" role="region" aria-label="Таймер зворотного відліку">
+              <div class="timer-left">
+                <div class="timer-title">
+                  <span class="ring" aria-hidden="true"></span>
+                  Старт через
+                </div>
+                <div class="countdown" aria-live="polite">
+                  <div class="tbox"><div class="tval" id="cdDays">—</div><div class="tlab">днів</div></div>
+                  <div class="tbox"><div class="tval" id="cdHours">—</div><div class="tlab">год</div></div>
+                  <div class="tbox"><div class="tval" id="cdMinutes">—</div><div class="tlab">хв</div></div>
+                  <div class="tbox"><div class="tval" id="cdSeconds">—</div><div class="tlab">сек</div></div>
+                </div>
+              </div>
+              <div class="timer-right">
+                <div class="pill" title="Дата та час">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M7 3v2M17 3v2M4 7h16M6 11h4M6 15h4M14 11h4M14 15h4M5 5h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+                  </svg>
+                  <span><strong id="eventDateLabel">5 лютого</strong> • <strong id="eventTimeLabel">17:30</strong></span>
+                </div>
+                <div class="pill" title="Формат">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M15 10l4.553-2.276A1 1 0 0 1 21 8.618v6.764a1 1 0 0 1-1.447.894L15 14M3 8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <span>Онлайн • Zoom/YouTube</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="micro">
+              Вже зареєструвалися: <strong id="registeredCount">1 842</strong> жінок.
+              Безкоштовно. Онлайн. Без запису.
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" id="heroVisual" aria-label="Фото Альони (плейсхолдер)">
+            <!-- 
+              ЗАМІНІТЬ НА РЕАЛЬНЕ ФОТО:
+              1) покладіть файл у папку, напр. /images/hero.webp та /images/hero.jpg
+              2) розкоментуйте picture нижче та приберіть div.photo
+            -->
+            <!--
+            <picture>
+              <source srcset="images/hero.webp" type="image/webp">
+              <img src="images/hero.jpg" alt="Альона Онофрійчук" loading="eager" decoding="async" style="width:100%;height:100%;object-fit:cover;">
+            </picture>
+            -->
+            <div class="photo">
+              Тут має бути <strong style="color:rgba(255,255,255,0.92);margin-left:6px;">hero-фото fashion-рівня</strong><br>
+              (погляд у камеру, впевненість + тепло)
+            </div>
+
+            <div class="caption">
+              <div class="caption-left">
+                <p class="name">Альона Онофрійчук</p>
+                <p class="bio">
+                  Від юриста до Місіс Миру • від подіумів Мілана до семінару в Далай-лами • бізнес, психологія, опора.
+                </p>
+              </div>
+              <div class="badge-row" aria-label="Ключові бейджі">
+                <span class="badge gold">Місіс Миру</span>
+                <span class="badge">15+ років у бізнесі</span>
+                <span class="badge">Покази в Мілані</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Pain points -->
+    <section id="pain">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="h2">Знайоме?</h2>
+            <p class="lead">Без драм. Просто чесно — те, що часто не говорять вголос.</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card reveal">
+            <p class="card-text">«Ти досягла того, про що інші мріють — але всередині порожнеча»</p>
+          </div>
+          <div class="card reveal">
+            <p class="card-text">«Твій щоденник забитий на місяць вперед, а на себе часу немає»</p>
+          </div>
+          <div class="card reveal">
+            <p class="card-text">«Ти заробляєш добре, але кожен євро дається ціною здоров'я і нервів»</p>
+          </div>
+          <div class="card reveal">
+            <p class="card-text">«Ти оточена людьми, але відчуваєш себе самотньою у своїх думках»</p>
+          </div>
+          <div class="card reveal">
+            <p class="card-text">«Ти боїшся зупинитися — бо здається, що все розвалиться»</p>
+          </div>
+          <div class="card reveal">
+            <p class="card-text">«Ти хочеш більше — але не ціною себе»</p>
+          </div>
+        </div>
+
+        <div class="quote reveal">
+          <em>Я знаю це відчуття. Я там була. І я знайшла вихід.</em>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="h2">Хто я така, щоб говорити тобі про успіх і щастя?</h2>
+            <p class="lead">
+              Мені важливо, щоб ти відчувала: я не «вчу життя». Я ділюся тим, що прожито.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-wrap">
+          <div class="mosaic reveal" aria-label="Фото-мозаїка (плейсхолдери)">
+            <div class="ph big" aria-hidden="true"></div>
+            <div class="ph" aria-hidden="true"></div>
+            <div class="ph" aria-hidden="true"></div>
+          </div>
+
+          <div class="card about-text reveal">
+            <p><strong>Мене звати Альона Онофрійчук.</strong></p>
+            <p>
+              Я була юристом, який працював на знос. Потім стала моделлю і ходила по подіумах Мілана.
+              Отримала титул <strong>Місіс Миру</strong>.
+            </p>
+            <p>
+              Здавалося б — мрія. Але всередині я була розбита.
+            </p>
+            <p>
+              Я шукала відповіді у бізнесі — і заробила свій перший мільйон. Шукала у духовності — і опинилася на семінарі в Далай-лами.
+              Шукала у психології — і здобула освіту, яка змінила все.
+            </p>
+            <p>
+              Сьогодні я поєдную те, що інші вважають несумісним: гроші і сенс, амбіції і спокій, красу зовнішню і внутрішню.
+              І я точно знаю: <strong>якщо вийшло в мене — вийде і в тебе.</strong>
+            </p>
+
+            <div class="proof" aria-label="Соціальний доказ">
+              <span class="tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L5.5 20l2-7L2 9h7l3-7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path>
+                </svg>
+                Місіс Миру
+              </span>
+              <span class="tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 19V5m0 14h16M8 15l3-3 2 2 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                15+ років у бізнесі
+              </span>
+              <span class="tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M7 20h10M9 20V8l3-4 3 4v12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                Покази в Мілані
+              </span>
+              <span class="tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                Семінар у Далай-лами
+              </span>
+              <span class="tag">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M8 3h8v6H8V3zM6 9h12v12H6V9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path>
+                </svg>
+                Психологічна та юридична освіта
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program -->
+    <section id="program">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="h2">За 2 години ти дізнаєшся те, на що я витратила 15 років</h2>
+            <p class="lead">Конкретно. Без “магії”. Без тиску. Тільки те, що реально тримає систему.</p>
+          </div>
+        </div>
+
+        <div class="agenda">
+          <div class="agenda-item reveal">
+            <div class="agenda-num">01</div>
+            <div>
+              <h3>Чому успіх не дорівнює щастю</h3>
+              <p>І що насправді стоїть за відчуттям «в мене все є, але я не відчуваю радості».</p>
+            </div>
+          </div>
+
+          <div class="agenda-item reveal">
+            <div class="agenda-num">02</div>
+            <div>
+              <h3>Формула «працювати менше — заробляти більше»</h3>
+              <p>Не езотерика — принципи, які я застосувала у власному житті та рішеннях.</p>
+            </div>
+          </div>
+
+          <div class="agenda-item reveal">
+            <div class="agenda-num">03</div>
+            <div>
+              <h3>Три рівні трансформації</h3>
+              <p>Чому коучинг не працює, курси не допомагають, а книжки забуваються — і що працює насправді.</p>
+            </div>
+          </div>
+
+          <div class="agenda-item reveal">
+            <div class="agenda-num">04</div>
+            <div>
+              <h3>Код успішної жінки</h3>
+              <p>Що спільного між топ-моделями, успішними підприємницями і жінками, які просто щасливі.</p>
+            </div>
+          </div>
+
+          <div class="agenda-item reveal">
+            <div class="agenda-num">05</div>
+            <div>
+              <h3>Твій наступний крок</h3>
+              <p>Персональна можливість для тих, хто готовий до глибокої роботи зі мною (без тиску — тільки запрошення).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- For whom -->
+    <section id="for-whom">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="h2">Цей вебінар для тебе, якщо:</h2>
+            <p class="lead">Ти впізнаєш себе хоча б у одному блоці — тобі буде влучно.</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card reveal">
+            <p class="card-title">Ти вже досягла</p>
+            <p class="card-text">• Маєш бізнес або високу позицію</p>
+            <p class="card-text">• Заробляєш €5 000+ на місяць</p>
+            <p class="card-text">• Зовні все ідеально, всередині — питання «навіщо?»</p>
+            <p class="card-text">• Хочеш масштабуватися без вигорання</p>
+          </div>
+
+          <div class="card reveal">
+            <p class="card-title">Ти на старті великого</p>
+            <p class="card-text">• Відчуваєш, що здатна на більше</p>
+            <p class="card-text">• Шукаєш сильний приклад і наставника</p>
+            <p class="card-text">• Готова до змін, але не знаєш з чого почати</p>
+            <p class="card-text">• Хочеш побудувати життя, а не просто кар’єру</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="register">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="h2">Забронюй місце на вебінар</h2>
+            <p class="lead">
+              Безкоштовно. Онлайн. Без запису. Місць обмежено якістю зв’язку.
+            </p>
+          </div>
+        </div>
+
+        <div class="form-wrap">
+          <form class="form reveal" id="registrationForm" autocomplete="on">
+            <div class="field">
+              <label for="name">Ім’я *</label>
+              <input id="name" name="name" type="text" placeholder="Наприклад: Олена" required="">
+            </div>
+
+            <div class="field">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" placeholder="name@example.com" required="">
+            </div>
+
+            <div class="field">
+              <label for="contact">Телефон / WhatsApp / Telegram (для нагадувань)</label>
+              <input id="contact" name="contact" type="text" placeholder="+380… або @username">
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="submit" id="submitBtn">Зареєструватися безкоштовно</button>
+              <button class="btn btn-secondary" type="button" id="scrollToFaq">Питання?</button>
+            </div>
+
+            <div class="fineprint" id="fineprint">
+              Без спаму. Тільки інформація про вебінар.
+              <br>Вже <strong id="registeredCount2">1 842</strong> жінок очікують на зустріч.
+            </div>
+
+            <!-- Сюди можна додати hidden поля для UTM -->
+            <input type="hidden" name="utm_source" id="utm_source">
+            <input type="hidden" name="utm_medium" id="utm_medium">
+            <input type="hidden" name="utm_campaign" id="utm_campaign">
+            <input type="hidden" name="utm_content" id="utm_content">
+            <input type="hidden" name="utm_term" id="utm_term">
+          </form>
+
+          <aside class="sidepanel reveal" aria-label="Деталі вебінару">
+            <h3>Деталі</h3>
+            <ul>
+              <li><strong>Дата:</strong> <span id="eventDateSide">5 лютого</span></li>
+              <li><strong>Час:</strong> <span id="eventTimeSide">17:30</span> (за Києвом)</li>
+              <li><strong>Тривалість:</strong> 1,5–2 години</li>
+              <li><strong>Формат:</strong> онлайн (Zoom/YouTube)</li>
+              <li><strong>Запис:</strong> ні (живий ефір)</li>
+            </ul>
+            <div class="divider"></div>
+            <p class="small" style="margin:0;">
+              Після реєстрації: редірект на Thank You та лист-підтвердження (інтеграція залежить від вашого email-сервісу).
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="h2">Що кажуть жінки, які вже пройшли цей шлях зі мною</h2>
+            <p class="lead">Тут мають бути реальні відгуки з фото та результатами (потрібно отримати від Альони).</p>
+          </div>
+        </div>
+
+        <div class="testimonials">
+          <div class="tcard reveal">
+            <div class="trow">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <p class="tname">Ім’я Прізвище</p>
+                <p class="tmeta">Підприємиця • результат за 4 тижні</p>
+              </div>
+            </div>
+            <p class="tquote">«Короткий відгук: про ясність, легкість, фінанси/баланс. 2–3 речення.»</p>
+            <p class="tmeta">— формат: до/після</p>
+          </div>
+
+          <div class="tcard reveal">
+            <div class="trow">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <p class="tname">Ім’я Прізвище</p>
+                <p class="tmeta">Кар’єра/бізнес • сильний інсайт</p>
+              </div>
+            </div>
+            <p class="tquote">«Короткий відгук: як змінилось відчуття “білячого колеса”.»</p>
+            <p class="tmeta">— формат: 1 конкретна зміна</p>
+          </div>
+
+          <div class="tcard reveal">
+            <div class="trow">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <p class="tname">Ім’я Прізвище</p>
+                <p class="tmeta">€5k+ • без вигорання</p>
+              </div>
+            </div>
+            <p class="tquote">«Короткий відгук: про межі, рішення, нову опору.»</p>
+            <p class="tmeta">— формат: цифри/факти (якщо є)</p>
+          </div>
+
+          <div class="tcard reveal">
+            <div class="trow">
+              <div class="avatar" aria-hidden="true"></div>
+              <div>
+                <p class="tname">Ім’я Прізвище</p>
+                <p class="tmeta">Початок шляху • впевненість</p>
+              </div>
+            </div>
+            <p class="tquote">«Короткий відгук: “я побачила наступний крок і перестала метатися”.»</p>
+            <p class="tmeta">— формат: емоційний результат</p>
+          </div>
+        </div>
+
+        <div class="note reveal">
+          Примітка: щоб це працювало як “luxury social proof”, краще 3–4 відгуки з однаковою структурою: фото → ім’я → контекст → 1 конкретний результат.
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 class="h2">Часті питання</h2>
+            <p class="lead">Я відповім так, як відповіла б подрузі — без продажних скриптів.</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item reveal">
+            <summary>
+              <span>Це безкоштовно? У чому підступ?</span>
+              <span class="chev" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </summary>
+            <div class="faq-body">
+              Так, вебінар повністю безкоштовний. Наприкінці я розповім про можливість глибшої роботи зі мною для тих, кому це відгукнеться.
+              Ніякого тиску — тільки інформація.
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <span>Буде запис?</span>
+              <span class="chev" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </summary>
+            <div class="faq-body">
+              Ні. Це живий ефір, і я хочу, щоб ти була присутня по-справжньому. Ті, хто не прийде — не отримають запис.
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <span>Я не підприємниця, мені підійде?</span>
+              <span class="chev" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </summary>
+            <div class="faq-body">
+              Так, якщо ти відчуваєш, що хочеш більшого від життя — неважливо, найманий ти працівник чи власниця бізнесу.
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <span>Скільки часу триватиме?</span>
+              <span class="chev" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </summary>
+            <div class="faq-body">
+              Приблизно 1,5–2 години. Плануй час так, щоб тебе ніхто не відволікав.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="final">
+      <div class="container">
+        <div class="final reveal">
+          <div class="left">
+            <h2>Твоє життя може змінитися за один вечір</h2>
+            <p>
+              Один клік. Одне рішення. Одна розмова, яка може стати поворотною точкою.
+            </p>
+            <p>
+              Я не обіцяю чарівних таблеток. Я обіцяю чесність, глибину і реальний досвід жінки, яка пройшла цей шлях.
+            </p>
+            <p><strong style="color:rgba(255,255,255,0.92);">Побачимося на вебінарі?</strong></p>
+
+            <div class="form-actions">
+              <a class="btn" href="#register" id="finalCta">Так, я буду</a>
+              <a class="btn btn-secondary" href="#program">Подивитися програму</a>
+            </div>
+
+            <div class="meta">
+              <span id="eventDateFooter">5 лютого</span> • <span id="eventTimeFooter">17:30</span> • Онлайн • Безкоштовно
+            </div>
+          </div>
+          <div class="right" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="fcol">
+            <p class="fbrand">Альона Онофрійчук</p>
+            <p class="small">
+              Luxury-відчуття — це не про картинку. Це про внутрішню опору, ясність і вибір себе без втрати масштабу.
+            </p>
+          </div>
+
+          <div class="fcol">
+            <p class="small" style="margin:0 0 10px;">Контакти</p>
+            <!-- Вставте реальні посилання -->
+            <a class="flink" href="https://instagram.com/" target="_blank" rel="noreferrer">
+              Instagram
+            </a>
+            <a class="flink" href="mailto:hello@example.com">
+              hello@example.com
+            </a>
+            <a class="flink" href="privacy.html" target="_blank" rel="noreferrer">
+              Політика конфіденційності
+            </a>
+            <p class="small" style="margin-top:12px;">
+              © <span id="year"></span> • Всі права захищено
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Sticky CTA (mobile) -->
+  <div class="sticky-cta" aria-label="Швидка реєстрація">
+    <div class="container">
+      <div class="inner">
+        <div class="txt">
+          <p class="t1">Перезавантаження</p>
+          <p class="t2"><span id="eventDateSticky">5 лютого</span> • <span id="eventTimeSticky">17:30</span> • Онлайн</p>
+        </div>
+        <a class="btn" href="#register">Хочу на вебінар</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exit intent modal -->
+  <div class="modal-backdrop" id="exitModal" role="dialog" aria-modal="true" aria-label="Нагадування про вебінар">
+    <div class="modal">
+      <div class="mhead">
+        <h3>Зачекай! Ти впевнена, що хочеш пропустити це?</h3>
+        <button class="close" type="button" id="closeExit" aria-label="Закрити">✕</button>
+      </div>
+      <div class="mbody">
+        <p style="margin: 0 0 12px;">
+          Це один вечір, який може скластися у нову точку опори.
+          Якщо відчуваєш, що «так більше не хочу» — просто залиш контакти.
+        </p>
+        <div class="form-actions">
+          <a class="btn" href="#register" id="exitCta">Забрати своє місце</a>
+          <button class="btn btn-secondary" type="button" id="dismissExit">Пізніше</button>
+        </div>
+        <p class="small" style="margin: 10px 0 0;">
+          Без спаму. Тільки інформація про вебінар.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social proof toast -->
+  <div class="toast" id="toast" aria-live="polite">
+    <div class="row">
+      <span class="dot" aria-hidden="true"></span>
+      <div>
+        <p class="msg" id="toastMsg">Марія з Києва щойно зареєструвалася</p>
+        <p class="time" id="toastTime">щойно</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /**
+     * ==========================
+     * 1) КОНФІГУРАЦІЯ
+     * ==========================
+     * Вебінар: 5 лютого о 17:30
+     * Важливо: в лютому для Києва зазвичай UTC+2 (EET).
+     * Якщо у вас інший рік/час — змініть EVENT_ISO нижче.
+     */
+    const CONFIG = {
+      // Змініть рік при потребі:
+      EVENT_ISO: "2026-02-05T17:30:00+02:00",
+      EVENT_DATE_TEXT: "5 лютого",
+      EVENT_TIME_TEXT: "17:30",
+      TIMEZONE_LABEL: "за Києвом",
+
+      // Плейсхолдер кількості зареєстрованих (краще підтягувати з CRM/таблиці)
+      REGISTERED_BASE: 1842,
+
+      // Інтеграція форми:
+      // - якщо у вас є endpoint (Make/Zapier/SendPulse/CRM) — вставте сюди
+      // - якщо null, працює демо-режим (просто Thank You)
+      FORM_ENDPOINT: null // напр: "https://hook.us1.make.com/xxxxx"
+    };
+
+    /**
+     * ==========================
+     * 2) УТИЛІТИ
+     * ==========================
+     */
+    const $ = (sel, root=document) => root.querySelector(sel);
+
+    function formatNumberUA(n){
+      // 1842 -> "1 842"
+      return (n + "").replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+
+    function setText(id, text){
+      const el = document.getElementById(id);
+      if(el) el.textContent = text;
+    }
+
+    /**
+     * ==========================
+     * 3) ПІДСТАНОВКА ДАТИ/ЧАСУ В ТЕКСТИ
+     * ==========================
+     */
+    function hydrateEventText(){
+      setText("eventDateInline", CONFIG.EVENT_DATE_TEXT);
+      setText("eventDateLabel", CONFIG.EVENT_DATE_TEXT);
+      setText("eventDateSide", CONFIG.EVENT_DATE_TEXT);
+      setText("eventDateFooter", CONFIG.EVENT_DATE_TEXT);
+      setText("eventDateSticky", CONFIG.EVENT_DATE_TEXT);
+
+      setText("eventTimeInline", CONFIG.EVENT_TIME_TEXT);
+      setText("eventTimeLabel", CONFIG.EVENT_TIME_TEXT);
+      setText("eventTimeSide", CONFIG.EVENT_TIME_TEXT);
+      setText("eventTimeFooter", CONFIG.EVENT_TIME_TEXT);
+      setText("eventTimeSticky", CONFIG.EVENT_TIME_TEXT);
+    }
+
+    /**
+     * ==========================
+     * 4) ТАЙМЕР
+     * ==========================
+     */
+    const eventDate = new Date(CONFIG.EVENT_ISO);
+
+    function updateCountdown(){
+      const now = new Date();
+      let diff = eventDate.getTime() - now.getTime();
+
+      if (diff <= 0){
+        setText("cdDays", "0");
+        setText("cdHours", "0");
+        setText("cdMinutes", "0");
+        setText("cdSeconds", "0");
+
+        const titleEl = document.querySelector(".timer-title");
+        if(titleEl) titleEl.lastChild && (titleEl.lastChild.textContent = " Вебінар розпочався");
+        return;
+      }
+
+      const sec = Math.floor(diff / 1000);
+      const days = Math.floor(sec / 86400);
+      const hours = Math.floor((sec % 86400) / 3600);
+      const minutes = Math.floor((sec % 3600) / 60);
+      const seconds = Math.floor(sec % 60);
+
+      setText("cdDays", String(days));
+      setText("cdHours", String(hours).padStart(2, "0"));
+      setText("cdMinutes", String(minutes).padStart(2, "0"));
+      setText("cdSeconds", String(seconds).padStart(2, "0"));
+    }
+
+    /**
+     * ==========================
+     * 5) SCROLL REVEAL
+     * ==========================
+     */
+    function initReveal(){
+      const els = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if(e.isIntersecting){
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.14 });
+
+      els.forEach(el => io.observe(el));
+    }
+
+    /**
+     * ==========================
+     * 6) PARALLAX (дуже делікатно)
+     * ==========================
+     */
+    function initParallax(){
+      const el = document.getElementById("heroVisual");
+      if(!el) return;
+
+      let ticking = false;
+
+      function onScroll(){
+        if(ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const y = window.scrollY || 0;
+          el.style.transform = `translateY(${Math.min(12, y * 0.02)}px)`;
+          ticking = false;
+        });
+      }
+      window.addEventListener("scroll", onScroll, { passive: true });
+    }
+
+    /**
+     * ==========================
+     * 7) FORM + THANK YOU
+     * ==========================
+     */
+    function getUtm(){
+      const p = new URLSearchParams(location.search);
+      return {
+        utm_source: p.get("utm_source") || "",
+        utm_medium: p.get("utm_medium") || "",
+        utm_campaign: p.get("utm_campaign") || "",
+        utm_content: p.get("utm_content") || "",
+        utm_term: p.get("utm_term") || ""
+      };
+    }
+
+    function hydrateUtmFields(){
+      const u = getUtm();
+      Object.keys(u).forEach(k => {
+        const el = document.getElementById(k);
+        if(el) el.value = u[k];
+      });
+    }
+
+    function showThankYou(){
+      document.getElementById("thankyou").style.display = "block";
+      document.getElementById("home").style.display = "none";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function showLanding(){
+      document.getElementById("thankyou").style.display = "none";
+      document.getElementById("home").style.display = "block";
+    }
+
+    function syncRoute(){
+      if(location.hash === "#thank-you"){
+        showThankYou();
+      } else {
+        showLanding();
+      }
+    }
+
+    async function submitRegistration(payload){
+      if(!CONFIG.FORM_ENDPOINT){
+        await new Promise(r => setTimeout(r, 650));
+        return { ok: true };
+      }
+
+      const res = await fetch(CONFIG.FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      if(!res.ok) throw new Error("Submit failed");
+      return { ok: true };
+    }
+
+    function initForm(){
+      const form = document.getElementById("registrationForm");
+      const btn = document.getElementById("submitBtn");
+      const scrollToFaq = document.getElementById("scrollToFaq");
+
+      if(scrollToFaq){
+        scrollToFaq.addEventListener("click", () => {
+          document.getElementById("faq").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const contact = form.contact.value.trim();
+        const utm = getUtm();
+
+        if(!name || !email){
+          alert("Будь ласка, заповни ім’я та email.");
+          return;
+        }
+
+        const payload = {
+          name, email, contact,
+          event: {
+            iso: CONFIG.EVENT_ISO,
+            dateText: CONFIG.EVENT_DATE_TEXT,
+            timeText: CONFIG.EVENT_TIME_TEXT
+          },
+          utm,
+          page: location.href,
+          createdAt: new Date().toISOString()
+        };
+
+        const old = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = "Реєструю…";
+
+        try{
+          await submitRegistration(payload);
+
+          const current = CONFIG.REGISTERED_BASE + 1;
+          setText("registeredCount", formatNumberUA(current));
+          setText("registeredCount2", formatNumberUA(current));
+
+          location.hash = "#thank-you";
+          syncRoute();
+        } catch(err){
+          console.error(err);
+          alert("Сталася помилка при реєстрації. Спробуй ще раз або напиши нам на email.");
+        } finally {
+          btn.disabled = false;
+          btn.textContent = old;
+        }
+      });
+    }
+
+    /**
+     * ==========================
+     * 8) EXIT INTENT (desktop)
+     * ==========================
+     */
+    function initExitIntent(){
+      const modal = document.getElementById("exitModal");
+      const closeBtn = document.getElementById("closeExit");
+      const dismissBtn = document.getElementById("dismissExit");
+      const exitCta = document.getElementById("exitCta");
+
+      let shown = false;
+
+      function openModal(){
+        if(shown) return;
+        shown = true;
+        modal.style.display = "flex";
+      }
+      function closeModal(){
+        modal.style.display = "none";
+      }
+
+      closeBtn.addEventListener("click", closeModal);
+      dismissBtn.addEventListener("click", closeModal);
+      modal.addEventListener("click", (e) => {
+        if(e.target === modal) closeModal();
+      });
+      exitCta.addEventListener("click", () => closeModal());
+
+      document.addEventListener("mouseleave", (e) => {
+        if(window.innerWidth < 980) return;
+        if(e.clientY <= 0) openModal();
+      });
+    }
+
+    /**
+     * ==========================
+     * 9) SOCIAL PROOF TOAST (опційно)
+     * ==========================
+     */
+    function initToast(){
+      const toast = document.getElementById("toast");
+      const msg = document.getElementById("toastMsg");
+      const time = document.getElementById("toastTime");
+
+      const names = ["Марія", "Ірина", "Оксана", "Анна", "Катерина", "Юлія", "Наталія"];
+      const cities = ["Києва", "Львова", "Одеси", "Дніпра", "Варшави", "Праги", "Берліна"];
+
+      function pick(arr){ return arr[Math.floor(Math.random() * arr.length)]; }
+
+      function showToast(){
+        msg.textContent = `${pick(names)} з ${pick(cities)} щойно зареєструвалася`;
+        time.textContent = "щойно";
+        toast.style.display = "block";
+
+        setTimeout(() => {
+          toast.style.display = "none";
+        }, 5200);
+      }
+
+      setTimeout(showToast, 6500);
+      setTimeout(showToast, 16500);
+    }
+
+    /**
+     * ==========================
+     * 10) INIT
+     * ==========================
+     */
+    function init(){
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const countText = formatNumberUA(CONFIG.REGISTERED_BASE);
+      setText("registeredCount", countText);
+      setText("registeredCount2", countText);
+
+      hydrateEventText();
+      hydrateUtmFields();
+
+      initReveal();
+      initParallax();
+      initForm();
+      initExitIntent();
+      initToast();
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      window.addEventListener("hashchange", syncRoute);
+      syncRoute();
+    }
+
+    init();
+  </script>
+
+  <!--
+    ==========================
+    ЩО ПОТРІБНО ВІД АЛЬОНИ (щоб довести до "ідеалу"):
+    1) 5–10 фото (WebP + JPG fallback), бажано 2000px по довгій стороні
+       - hero fashion (основне)
+       - 2-3 для мозаїки “про мене”
+       - 1 для фінального CTA
+       - 1-2 додаткові (за бажанням)
+    2) 3–4 реальні відгуки (ім’я, фото, короткий контекст, результат)
+    3) Instagram посилання
+    4) Email для питань
+    5) Політика конфіденційності (окрема сторінка або модал)
+    6) Email-сервіс/CRM для інтеграції форми (SendPulse/Mailchimp/HubSpot/amoCRM/Make/Zapier тощо)
+  -->
+
+
+</body></html>
