@@ -82,10 +82,7 @@
       margin:0;
       font-family: var(--sans);
       color: var(--text);
-      background:
-        radial-gradient(1200px 700px at 70% 10%, rgba(212,175,55,0.10), transparent 60%),
-        radial-gradient(900px 600px at 15% 30%, rgba(201,169,98,0.08), transparent 62%),
-        linear-gradient(180deg, #0B0B0B, #0D0D0D 30%, #0B0B0B 100%);
+      background: #0D0D0D;
       overflow-x: hidden;
     }
 
@@ -97,7 +94,8 @@
       margin: 0 auto;
     }
 
-    /* Subtle "luxury dust" overlay */
+    /* Subtle "luxury dust" overlay - ОТКЛЮЧЕНО */
+    /*
     .grain::before{
       content:"";
       position: fixed;
@@ -112,6 +110,7 @@
       filter: blur(0.2px);
       z-index: 1;
     }
+    */
 
     /* Top floating bar */
     .topbar{
@@ -334,10 +333,18 @@
       min-height: 520px;
       box-shadow: 0 32px 120px rgba(0,0,0,0.70);
       border: 1px solid rgba(255,255,255,0.10);
-      background:
-        radial-gradient(1000px 600px at 30% 20%, rgba(212,175,55,0.16), transparent 55%),
-        linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
       transform: translateZ(0);
+    }
+    /* Мягкий градиент только снизу для читаемости текста */
+    .hero-visual::after{
+      content:"";
+      position:absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 50%;
+      background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.70) 100%);
+      z-index: 1;
+      pointer-events: none;
     }
 
     .hero-visual .photo{
@@ -490,9 +497,7 @@
       overflow:hidden;
       min-height: 200px;
       border: 1px solid rgba(255,255,255,0.10);
-      background:
-        radial-gradient(700px 460px at 30% 25%, rgba(212,175,55,0.14), transparent 58%),
-        linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
       position: relative;
       box-shadow: 0 22px 90px rgba(0,0,0,0.42);
     }
@@ -742,10 +747,8 @@
     .sidepanel{
       padding: 18px;
       border-radius: var(--radius);
-      border: 1px solid rgba(212,175,55,0.18);
-      background:
-        radial-gradient(900px 600px at 30% 20%, rgba(212,175,55,0.12), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.12);
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
     }
     .sidepanel h3{
       margin: 0 0 10px;
@@ -807,9 +810,7 @@
     }
     .final .right{
       position: relative;
-      background:
-        radial-gradient(900px 600px at 40% 20%, rgba(212,175,55,0.16), transparent 60%),
-        linear-gradient(180deg, rgba(0,0,0,0.10), rgba(0,0,0,0.60));
+      background: rgba(0,0,0,0.30);
     }
     .final .right::after{
       content:"Фото для фінального блоку (замінити на реальне)";
@@ -918,9 +919,7 @@
       width: min(720px, 100%);
       border-radius: 26px;
       border: 1px solid rgba(255,255,255,0.12);
-      background:
-        radial-gradient(900px 600px at 30% 20%, rgba(212,175,55,0.14), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
       box-shadow: 0 40px 160px rgba(0,0,0,0.72);
       overflow: hidden;
     }
@@ -1010,10 +1009,8 @@
     }
     .thankyou .box{
       border-radius: 26px;
-      border: 1px solid rgba(212,175,55,0.22);
-      background:
-        radial-gradient(900px 600px at 30% 20%, rgba(212,175,55,0.14), transparent 60%),
-        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.12);
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
       padding: 22px;
       box-shadow: var(--shadow);
     }
@@ -1042,15 +1039,42 @@
       .timer{ flex-direction: column; align-items: flex-start; }
       .timer-right{ align-items: flex-start; text-align: left; }
     }
+    /* Переключение текста кнопки в хедере */
+    .btn-text-short{ display: none; }
+    .btn-text-full{ display: inline; }
+
     @media (max-width: 640px){
       section{ padding: 52px 0; }
       .topbar-meta{ display:none; }
+      /* Короткий текст кнопки на мобилке */
+      .btn-text-full{ display: none; }
+      .btn-text-short{ display: inline; }
+      .topbar .btn{
+        padding: 8px 12px;
+        font-size: 10px;
+        letter-spacing: 0.01em;
+        flex-shrink: 0;
+      }
+      .brand{
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
       .sticky-cta{ display:block; }
       footer{ padding-bottom: 130px; }
       .testimonials{ grid-template-columns: 1fr; }
       .tbox{ min-width: 72px; }
       .agenda-item{ grid-template-columns: 1fr; }
       .agenda-num{ width: 70px; height: 70px; }
+    }
+    @media (max-width: 400px){
+      .topbar .btn{
+        padding: 6px 10px;
+        font-size: 9px;
+      }
+      .brand{
+        font-size: 12px;
+      }
     }
 
     /* Reduce motion */
@@ -1073,7 +1097,7 @@
             Безкоштовний вебінар • <span id="eventDateInline">5 лютого</span> о <span id="eventTimeInline">17:30</span> • Онлайн • Без запису
           </div>
         </div>
-        <a class="btn" href="#register" id="topCta">Забронювати місце</a>
+        <a class="btn" href="#register" id="topCta"><span class="btn-text-full">Забронювати місце</span><span class="btn-text-short">Реєстрація</span></a>
       </div>
     </div>
   </div>
@@ -1640,8 +1664,8 @@
             <a class="flink" href="https://instagram.com/" target="_blank" rel="noreferrer">
               Instagram
             </a>
-            <a class="flink" href="mailto:hello@example.com">
-              hello@example.com
+            <a class="flink" href="/cdn-cgi/l/email-protection#e189848d8d8ea18499808c918d84cf828e8c">
+              <span class="__cf_email__" data-cfemail="2d45484141426d48554c405d4148034e4240">[email&#160;protected]</span>
             </a>
             <a class="flink" href="privacy.html" target="_blank" rel="noreferrer">
               Політика конфіденційності
@@ -1702,7 +1726,7 @@
     </div>
   </div>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     /**
      * ==========================
      * 1) КОНФІГУРАЦІЯ
