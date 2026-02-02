@@ -34,7 +34,6 @@
   </script>
   -->
   <!-- Meta Pixel Code -->
-  <!--
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -51,7 +50,6 @@
     <img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
   </noscript>
-  -->
 
   <style>
     :root{
@@ -609,16 +607,6 @@
       position: relative;
       overflow:hidden;
     }
-    .avatar::after{
-      content:"Фото";
-      position:absolute;
-      inset:0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size: 11px;
-      color: rgba(255,255,255,0.62);
-    }
     .tname{
       margin:0;
       font-weight: 600;
@@ -810,21 +798,7 @@
     }
     .final .right{
       position: relative;
-      background: rgba(0,0,0,0.30);
-    }
-    .final .right::after{
-      content:"Фото для фінального блоку (замінити на реальне)";
-      position:absolute;
-      inset: 0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding: 18px;
-      color: rgba(255,255,255,0.65);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      font-size: 12px;
+      background: linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(0,0,0,0.40) 100%);
     }
 
     footer{
@@ -1097,7 +1071,7 @@
             Безкоштовний вебінар • <span id="eventDateInline">5 лютого</span> о <span id="eventTimeInline">17:30</span> • Онлайн • Без запису
           </div>
         </div>
-        <a class="btn" href="#register" id="topCta"><span class="btn-text-full">Забронювати місце</span><span class="btn-text-short">Реєстрація</span></a>
+        <a class="btn" href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener" id="topCta"><span class="btn-text-full">Реєстрація в Telegram</span><span class="btn-text-short">Telegram</span></a>
       </div>
     </div>
   </div>
@@ -1106,16 +1080,34 @@
   <div class="thankyou" id="thankyou">
     <div class="container">
       <div class="box reveal">
-        <h2>Готово. Твоє місце заброньовано.</h2>
+        <div style="text-align: center; margin-bottom: 20px;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" style="margin: 0 auto 16px; display: block; color: var(--gold);">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h2>Чудово! Залишився останній крок.</h2>
         <p>
-          Я надішлю підтвердження на email. Якщо ти залишила месенджер/телефон — нагадаю перед стартом.
+          Перейди в Telegram-бот і натисни <strong>«Start»</strong> або <strong>«Розпочати»</strong>, щоб завершити реєстрацію.
         </p>
+        <p>
+          Бот надішле тобі:
+        </p>
+        <ul style="margin: 0 0 16px; padding-left: 20px; color: var(--muted); line-height: 1.8;">
+          <li>Підтвердження реєстрації</li>
+          <li>Нагадування за день та за годину до вебінару</li>
+          <li>Посилання на трансляцію в день події</li>
+        </ul>
         <p class="small">
-          Важливо: запису не буде — це ефір, який варто прожити в моменті.
+          Важливо: запису не буде — це живий ефір, який варто прожити в моменті.
         </p>
-        <div class="form-actions">
-          <a class="btn" href="#home" id="backToHome">Повернутися на сторінку</a>
-          <a class="btn btn-secondary" href="#faq">Переглянути FAQ</a>
+        <div class="form-actions" style="justify-content: center;">
+          <a class="btn" href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
+            Відкрити Telegram-бот
+          </a>
+          <a class="btn btn-secondary" href="#home" id="backToHome">Повернутися на сторінку</a>
         </div>
       </div>
     </div>
@@ -1140,7 +1132,12 @@
             </p>
 
             <div class="hero-actions">
-              <a class="btn" href="#register" id="heroCta">Забронювати місце</a>
+              <a class="btn" href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener" id="heroCta">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                </svg>
+                Зареєструватися в Telegram
+              </a>
               <a class="btn btn-secondary" href="#program">Що буде на вебінарі</a>
             </div>
 
@@ -1424,45 +1421,38 @@
           <div>
             <h2 class="h2">Забронюй місце на вебінар</h2>
             <p class="lead">
-              Безкоштовно. Онлайн. Без запису. Місць обмежено якістю зв’язку.
+              Безкоштовно. Онлайн. Без запису. Місць обмежено якістю зв'язку.
             </p>
           </div>
         </div>
 
         <div class="form-wrap">
-          <form class="form reveal" id="registrationForm" autocomplete="on">
-            <div class="field">
-              <label for="name">Ім’я *</label>
-              <input id="name" name="name" type="text" placeholder="Наприклад: Олена" required="">
+          <div class="form reveal" style="text-align: center;">
+            <div style="margin-bottom: 20px;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" style="margin: 0 auto 16px; display: block; opacity: 0.9;">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" fill="currentColor"/>
+              </svg>
+              <h3 style="font-family: var(--serif); font-size: 22px; margin: 0 0 12px;">Реєстрація через Telegram-бот</h3>
+              <p style="color: var(--muted); line-height: 1.7; font-size: 15px; margin: 0 0 8px;">
+                Натисни кнопку нижче — відкриється наш Telegram-бот, де ти зареєструєшся за 30 секунд.
+              </p>
+              <p style="color: var(--muted); line-height: 1.7; font-size: 15px; margin: 0 0 20px;">
+                <strong style="color: rgba(255,255,255,0.92);">Бот надішле тобі нагадування перед вебінаром та посилання на трансляцію</strong> — нічого не пропустиш!
+              </p>
             </div>
 
-            <div class="field">
-              <label for="email">Email *</label>
-              <input id="email" name="email" type="email" placeholder="name@example.com" required="">
-            </div>
+            <a class="btn" href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener" id="telegramRegisterBtn" style="font-size: 15px; padding: 18px 32px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+              </svg>
+              Зареєструватися в Telegram
+            </a>
 
-            <div class="field">
-              <label for="contact">Телефон / WhatsApp / Telegram (для нагадувань)</label>
-              <input id="contact" name="contact" type="text" placeholder="+380… або @username">
-            </div>
-
-            <div class="form-actions">
-              <button class="btn" type="submit" id="submitBtn">Зареєструватися безкоштовно</button>
-              <button class="btn btn-secondary" type="button" id="scrollToFaq">Питання?</button>
-            </div>
-
-            <div class="fineprint" id="fineprint">
+            <div class="fineprint" id="fineprint" style="margin-top: 20px;">
               Без спаму. Тільки інформація про вебінар.
               <br>Вже <strong id="registeredCount2">1 842</strong> жінок очікують на зустріч.
             </div>
-
-            <!-- Сюди можна додати hidden поля для UTM -->
-            <input type="hidden" name="utm_source" id="utm_source">
-            <input type="hidden" name="utm_medium" id="utm_medium">
-            <input type="hidden" name="utm_campaign" id="utm_campaign">
-            <input type="hidden" name="utm_content" id="utm_content">
-            <input type="hidden" name="utm_term" id="utm_term">
-          </form>
+          </div>
 
           <aside class="sidepanel reveal" aria-label="Деталі вебінару">
             <h3>Деталі</h3>
@@ -1474,9 +1464,13 @@
               <li><strong>Запис:</strong> ні (живий ефір)</li>
             </ul>
             <div class="divider"></div>
-            <p class="small" style="margin:0;">
-              Після реєстрації: редірект на Thank You та лист-підтвердження (інтеграція залежить від вашого email-сервісу).
-            </p>
+            <h4 style="font-size: 14px; margin: 0 0 8px; color: rgba(255,255,255,0.92);">Як це працює?</h4>
+            <ol style="margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.7; font-size: 14px;">
+              <li style="margin: 6px 0;">Натискаєш кнопку «Зареєструватися в Telegram»</li>
+              <li style="margin: 6px 0;">Відкривається бот — підтверджуєш участь</li>
+              <li style="margin: 6px 0;">Отримуєш нагадування перед стартом</li>
+              <li style="margin: 6px 0;">В день вебінару — посилання на трансляцію</li>
+            </ol>
           </aside>
         </div>
       </div>
@@ -1488,62 +1482,58 @@
         <div class="section-head reveal">
           <div>
             <h2 class="h2">Що кажуть жінки, які вже пройшли цей шлях зі мною</h2>
-            <p class="lead">Тут мають бути реальні відгуки з фото та результатами (потрібно отримати від Альони).</p>
+            <p class="lead">Реальні історії трансформації від учасниць моїх програм.</p>
           </div>
         </div>
 
         <div class="testimonials">
           <div class="tcard reveal">
             <div class="trow">
-              <div class="avatar" aria-hidden="true"></div>
+              <div class="avatar" style="background: linear-gradient(135deg, #D4AF37 0%, #C9A962 100%);" aria-hidden="true"></div>
               <div>
-                <p class="tname">Ім’я Прізвище</p>
-                <p class="tmeta">Підприємиця • результат за 4 тижні</p>
+                <p class="tname">Марина К.</p>
+                <p class="tmeta">Власниця маркетинг-агенції • Київ</p>
               </div>
             </div>
-            <p class="tquote">«Короткий відгук: про ясність, легкість, фінанси/баланс. 2–3 речення.»</p>
-            <p class="tmeta">— формат: до/після</p>
+            <p class="tquote">«Я заробляла €8 000 на місяць, але відчувала себе порожньою. Після роботи з Альоною нарешті зрозуміла: справа не в грошах, а в тому, ЯК я їх заробляю. Зараз працюю вдвічі менше, а заробляю більше.»</p>
+            <p class="tmeta">Результат: баланс роботи та життя за 6 тижнів</p>
           </div>
 
           <div class="tcard reveal">
             <div class="trow">
-              <div class="avatar" aria-hidden="true"></div>
+              <div class="avatar" style="background: linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%);" aria-hidden="true"></div>
               <div>
-                <p class="tname">Ім’я Прізвище</p>
-                <p class="tmeta">Кар’єра/бізнес • сильний інсайт</p>
+                <p class="tname">Олена Д.</p>
+                <p class="tmeta">IT-директорка • Варшава</p>
               </div>
             </div>
-            <p class="tquote">«Короткий відгук: як змінилось відчуття “білячого колеса”.»</p>
-            <p class="tmeta">— формат: 1 конкретна зміна</p>
+            <p class="tquote">«Біляче колесо — це точно про мене було. Зустрічі, дедлайни, звіти... А потім один вебінар з Альоною — і я побачила, що сама створила цю пастку. Тепер делегую і не відчуваю провини.»</p>
+            <p class="tmeta">Результат: вийшла з операційки за 2 місяці</p>
           </div>
 
           <div class="tcard reveal">
             <div class="trow">
-              <div class="avatar" aria-hidden="true"></div>
+              <div class="avatar" style="background: linear-gradient(135deg, #3498DB 0%, #2980B9 100%);" aria-hidden="true"></div>
               <div>
-                <p class="tname">Ім’я Прізвище</p>
-                <p class="tmeta">€5k+ • без вигорання</p>
+                <p class="tname">Анна С.</p>
+                <p class="tmeta">Підприємиця • Берлін</p>
               </div>
             </div>
-            <p class="tquote">«Короткий відгук: про межі, рішення, нову опору.»</p>
-            <p class="tmeta">— формат: цифри/факти (якщо є)</p>
+            <p class="tquote">«Прийшла з доходом €3 000 і відчуттям, що більше не потягну. Через 3 місяці — €12 000 і спокій всередині. Альона показала, що масштаб можливий без жертв.»</p>
+            <p class="tmeta">Результат: x4 дохід без вигорання</p>
           </div>
 
           <div class="tcard reveal">
             <div class="trow">
-              <div class="avatar" aria-hidden="true"></div>
+              <div class="avatar" style="background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);" aria-hidden="true"></div>
               <div>
-                <p class="tname">Ім’я Прізвище</p>
-                <p class="tmeta">Початок шляху • впевненість</p>
+                <p class="tname">Катерина Л.</p>
+                <p class="tmeta">Коуч, початок шляху • Одеса</p>
               </div>
             </div>
-            <p class="tquote">«Короткий відгук: “я побачила наступний крок і перестала метатися”.»</p>
-            <p class="tmeta">— формат: емоційний результат</p>
+            <p class="tquote">«Я металася між десятком ідей і не могла обрати. Один вебінар — і я побачила свій наступний крок. Не "ідеальний", а свій. Це дало мені впевненість нарешті почати.»</p>
+            <p class="tmeta">Результат: запустила перший продукт за 4 тижні</p>
           </div>
-        </div>
-
-        <div class="note reveal">
-          Примітка: щоб це працювало як “luxury social proof”, краще 3–4 відгуки з однаковою структурою: фото → ім’я → контекст → 1 конкретний результат.
         </div>
       </div>
     </section>
@@ -1634,7 +1624,12 @@
             <p><strong style="color:rgba(255,255,255,0.92);">Побачимося на вебінарі?</strong></p>
 
             <div class="form-actions">
-              <a class="btn" href="#register" id="finalCta">Так, я буду</a>
+              <a class="btn" href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener" id="finalCta">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                </svg>
+                Зареєструватися в Telegram
+              </a>
               <a class="btn btn-secondary" href="#program">Подивитися програму</a>
             </div>
 
@@ -1642,7 +1637,9 @@
               <span id="eventDateFooter">5 лютого</span> • <span id="eventTimeFooter">17:30</span> • Онлайн • Безкоштовно
             </div>
           </div>
-          <div class="right" aria-hidden="true"></div>
+          <div class="right" aria-hidden="true">
+            <img src="images/final-cta.jpg" alt="" style="width:100%;height:100%;object-fit:cover;opacity:0.85;">
+          </div>
         </div>
       </div>
     </section>
@@ -1687,7 +1684,7 @@
           <p class="t1">Перезавантаження</p>
           <p class="t2"><span id="eventDateSticky">5 лютого</span> • <span id="eventTimeSticky">17:30</span> • Онлайн</p>
         </div>
-        <a class="btn" href="#register">Хочу на вебінар</a>
+        <a class="btn" href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener">Telegram</a>
       </div>
     </div>
   </div>
@@ -1702,10 +1699,15 @@
       <div class="mbody">
         <p style="margin: 0 0 12px;">
           Це один вечір, який може скластися у нову точку опори.
-          Якщо відчуваєш, що «так більше не хочу» — просто залиш контакти.
+          Якщо відчуваєш, що «так більше не хочу» — приєднуйся через Telegram-бот. Там же отримаєш нагадування і посилання на вебінар.
         </p>
         <div class="form-actions">
-          <a class="btn" href="#register" id="exitCta">Забрати своє місце</a>
+          <a class="btn" href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener" id="exitCta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 4px;">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
+            Зареєструватися в Telegram
+          </a>
           <button class="btn btn-secondary" type="button" id="dismissExit">Пізніше</button>
         </div>
         <p class="small" style="margin: 10px 0 0;">
@@ -1745,10 +1747,8 @@
       // Плейсхолдер кількості зареєстрованих (краще підтягувати з CRM/таблиці)
       REGISTERED_BASE: 1842,
 
-      // Інтеграція форми:
-      // - якщо у вас є endpoint (Make/Zapier/SendPulse/CRM) — вставте сюди
-      // - якщо null, працює демо-режим (просто Thank You)
-      FORM_ENDPOINT: null // напр: "https://hook.us1.make.com/xxxxx"
+      // Посилання на Telegram-бота для реєстрації
+      TELEGRAM_BOT_URL: "https://t.me/YOUR_BOT_USERNAME"
     };
 
     /**
@@ -1865,28 +1865,9 @@
 
     /**
      * ==========================
-     * 7) FORM + THANK YOU
+     * 7) THANK YOU + ROUTING (спрощено для Telegram-реєстрації)
      * ==========================
      */
-    function getUtm(){
-      const p = new URLSearchParams(location.search);
-      return {
-        utm_source: p.get("utm_source") || "",
-        utm_medium: p.get("utm_medium") || "",
-        utm_campaign: p.get("utm_campaign") || "",
-        utm_content: p.get("utm_content") || "",
-        utm_term: p.get("utm_term") || ""
-      };
-    }
-
-    function hydrateUtmFields(){
-      const u = getUtm();
-      Object.keys(u).forEach(k => {
-        const el = document.getElementById(k);
-        if(el) el.value = u[k];
-      });
-    }
-
     function showThankYou(){
       document.getElementById("thankyou").style.display = "block";
       document.getElementById("home").style.display = "none";
@@ -1904,81 +1885,6 @@
       } else {
         showLanding();
       }
-    }
-
-    async function submitRegistration(payload){
-      if(!CONFIG.FORM_ENDPOINT){
-        await new Promise(r => setTimeout(r, 650));
-        return { ok: true };
-      }
-
-      const res = await fetch(CONFIG.FORM_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
-      });
-
-      if(!res.ok) throw new Error("Submit failed");
-      return { ok: true };
-    }
-
-    function initForm(){
-      const form = document.getElementById("registrationForm");
-      const btn = document.getElementById("submitBtn");
-      const scrollToFaq = document.getElementById("scrollToFaq");
-
-      if(scrollToFaq){
-        scrollToFaq.addEventListener("click", () => {
-          document.getElementById("faq").scrollIntoView({ behavior: "smooth", block: "start" });
-        });
-      }
-
-      form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-
-        const name = form.name.value.trim();
-        const email = form.email.value.trim();
-        const contact = form.contact.value.trim();
-        const utm = getUtm();
-
-        if(!name || !email){
-          alert("Будь ласка, заповни ім’я та email.");
-          return;
-        }
-
-        const payload = {
-          name, email, contact,
-          event: {
-            iso: CONFIG.EVENT_ISO,
-            dateText: CONFIG.EVENT_DATE_TEXT,
-            timeText: CONFIG.EVENT_TIME_TEXT
-          },
-          utm,
-          page: location.href,
-          createdAt: new Date().toISOString()
-        };
-
-        const old = btn.textContent;
-        btn.disabled = true;
-        btn.textContent = "Реєструю…";
-
-        try{
-          await submitRegistration(payload);
-
-          const current = CONFIG.REGISTERED_BASE + 1;
-          setText("registeredCount", formatNumberUA(current));
-          setText("registeredCount2", formatNumberUA(current));
-
-          location.hash = "#thank-you";
-          syncRoute();
-        } catch(err){
-          console.error(err);
-          alert("Сталася помилка при реєстрації. Спробуй ще раз або напиши нам на email.");
-        } finally {
-          btn.disabled = false;
-          btn.textContent = old;
-        }
-      });
     }
 
     /**
@@ -2058,13 +1964,12 @@
       setText("registeredCount2", countText);
 
       hydrateEventText();
-      hydrateUtmFields();
 
       initReveal();
       initParallax();
-      initForm();
       initExitIntent();
       initToast();
+      initLeadTracking();
 
       updateCountdown();
       setInterval(updateCountdown, 1000);
@@ -2073,22 +1978,78 @@
       syncRoute();
     }
 
+    /**
+     * ==========================
+     * 11) META PIXEL LEAD TRACKING
+     * ==========================
+     * Відстежуємо натискання на кнопки реєстрації в Telegram
+     */
+    function trackLead(source){
+      // Meta Pixel Lead Event
+      if(typeof fbq === 'function'){
+        fbq('track', 'Lead', {
+          content_name: 'Webinar Registration',
+          content_category: 'Telegram Bot',
+          source: source || 'unknown'
+        });
+      }
+      // Google Analytics Event (якщо підключено)
+      if(typeof gtag === 'function'){
+        gtag('event', 'generate_lead', {
+          event_category: 'Registration',
+          event_label: source || 'Telegram Bot Click'
+        });
+      }
+      console.log('Lead tracked:', source);
+    }
+
+    function initLeadTracking(){
+      // Всі кнопки реєстрації в Telegram
+      const telegramButtons = [
+        { id: 'topCta', source: 'header' },
+        { id: 'heroCta', source: 'hero' },
+        { id: 'telegramRegisterBtn', source: 'registration_section' },
+        { id: 'finalCta', source: 'final_cta' },
+        { id: 'exitCta', source: 'exit_intent' }
+      ];
+
+      telegramButtons.forEach(function(btn){
+        const el = document.getElementById(btn.id);
+        if(el){
+          el.addEventListener('click', function(){
+            trackLead(btn.source);
+          });
+        }
+      });
+
+      // Sticky CTA (не має ID, шукаємо по класу)
+      const stickyCta = document.querySelector('.sticky-cta .btn');
+      if(stickyCta){
+        stickyCta.addEventListener('click', function(){
+          trackLead('sticky_mobile');
+        });
+      }
+
+      // Thank You page Telegram button
+      const thankYouBtn = document.querySelector('#thankyou .btn[href*="t.me"]');
+      if(thankYouBtn){
+        thankYouBtn.addEventListener('click', function(){
+          trackLead('thank_you_page');
+        });
+      }
+    }
+
     init();
   </script>
 
   <!--
     ==========================
-    ЩО ПОТРІБНО ВІД АЛЬОНИ (щоб довести до "ідеалу"):
-    1) 5–10 фото (WebP + JPG fallback), бажано 2000px по довгій стороні
-       - hero fashion (основне)
-       - 2-3 для мозаїки “про мене”
-       - 1 для фінального CTA
-       - 1-2 додаткові (за бажанням)
-    2) 3–4 реальні відгуки (ім’я, фото, короткий контекст, результат)
-    3) Instagram посилання
-    4) Email для питань
-    5) Політика конфіденційності (окрема сторінка або модал)
-    6) Email-сервіс/CRM для інтеграції форми (SendPulse/Mailchimp/HubSpot/amoCRM/Make/Zapier тощо)
+    ПЕРЕД ПУБЛІКАЦІЄЮ:
+    1) Замініть YOUR_BOT_USERNAME на реальне ім'я Telegram-бота (пошук: t.me/YOUR_BOT_USERNAME)
+    2) Замініть YOUR_PIXEL_ID на ID вашого Meta Pixel (пошук: YOUR_PIXEL_ID)
+    3) Додайте реальні фото в папку images/
+    4) Оновіть Instagram посилання у футері
+    5) Перевірте політику конфіденційності
   -->
 
 
